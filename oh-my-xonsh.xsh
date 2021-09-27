@@ -15,6 +15,7 @@ for plugin in plugins:
     for plugindir in ($XSH_CUSTOM, $XSH):
         initfile = fp"{plugindir}/plugins/{plugin}/{plugin}.plugin.xsh"
         if initfile.exists():
+            source @(initfile)
             found = True
             break
     if not found:
