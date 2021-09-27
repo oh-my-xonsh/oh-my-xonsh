@@ -1,1 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# OSX files
+.DS_Store
+
+# test files
 foo.xsh
+
+# exclude special dirs
+custom/*/
+custom/*
