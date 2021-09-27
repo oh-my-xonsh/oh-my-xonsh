@@ -11,3 +11,4 @@ foo.xsh
 # exclude special dirs
 custom/*/
 custom/*
+!custom/example.xsh
