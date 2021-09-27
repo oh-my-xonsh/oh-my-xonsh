@@ -3,6 +3,11 @@ try:
 except:
     plugins = []
 
+try:
+    len(omx_config)
+except:
+    omx_config = {}
+
 if not 'XSH' in ${...}:
     $XSH = pf"{__file__}".parent.resolve()
 
