@@ -1,56 +1,56 @@
-from collections import OrderedDict
-from datetime import datetime
-
-# see if the plugins list exists
-try:
-    len(plugins)
-except:
-    plugins = []
-
-# see if the omx_config dict exists
-try:
-    len(omx_config)
-except:
-    omx_config = {}
-
 # define XSH environment
-if not 'XSH' in ${...}:
-    $XSH = pf"{__file__}".parent.resolve()
+if not 'OMX_HOME' in ${...}:
+    $OMX_HOME = pf"{__file__}".parent.resolve()
 
-if not 'XSH_CUSTOM' in ${...}:
-    $XSH_CUSTOM = $XSH / "custom"
+if not 'OMX_CUSTOM_HOME' in ${...}:
+    $OMX_CUSTOM_HOME = $OMX_HOME / "custom"
 
-# store info about plugins we load
-omx_loaded_plugins = OrderedDict()
+class OhMyXonsh():
+    """Object to hold the Oh-My-Xonsh functionality"""
+    def __init__(self):
+        """class initializer"""
+        from collections import OrderedDict
+        import platform
+        self.plugins = []
+        self.loaded_plugins = OrderedDict()
+        self.config = {}
+        self.platform = platform.system()
 
-# define functions
-def omx_load_plugin(plugin, force=False):
-    """Load an Oh-My-Xonsh plugin"""
-    if plugin in omx_loaded_plugins and not force:
-        return False
+    def list_plugins(self):
+        """List Oh-My-Xonsh plugins"""
+        print("--- OMX plugins ---")
+        for fp in gp`$OMX_HOME/plugins/*/`:
+            print(fp.name)
+        print("--- OMX custom plugins ---")
+        for fp in gp`$OMX_CUSTOM_HOME/plugins/*/`:
+            print(fp.name)
 
-    for plugindir in ($XSH_CUSTOM, $XSH):
-        initfile = fp"{plugindir}/plugins/{plugin}/{plugin}.plugin.xsh"
-        if initfile.exists():
-            source @(initfile)
-            omx_loaded_plugins[plugin] = datetime.now().isoformat()
-            return True
-    if not found:
-        echo @(f"Cannot find plugin: {plugin}") out>err
-        return False
+    def load_plugin(self, plugin, force=False):
+        """Load an Oh-My-Xonsh plugin"""
+        from datetime import datetime
+        if plugin in self.loaded_plugins and not force:
+            return False
 
-def omx_list_plugins():
-    echo "--- OMX plugins ---"
-    for fp in gp`$XSH/plugins/*/`:
-        echo @(fp.name)
-    echo "--- OMX custom plugins ---"
-    for fp in gp`$XSH_CUSTOM/plugins/*/`:
-        echo @(fp.name)
+        for plugindir in ($OMX_CUSTOM_HOME, $OMX_HOME):
+            initfile = fp"{plugindir}/plugins/{plugin}/{plugin}.plugin.xsh"
+            if initfile.exists():
+                cmdresult = !(source @(initfile))
+                if cmdresult.returncode != 0:
+                    echo @(f"plugin failed to load properly: {plugin}") out>err
+                self.loaded_plugins[plugin] = cmdresult
+                return True
+        if not found:
+            echo @(f"Cannot find plugin: {plugin}") out>err
+            return False
 
-# load plugins
-for plugin in plugins:
-    omx_load_plugin(plugin)
+    def initialize(self):
+        """Initialize the Oh-My-Xonsh plugins and scripts"""
+        # load plugins
+        for plugin in self.plugins:
+            self.load_plugin(plugin)
 
-# load additional config files
-for config_file in gp`$XSH_CUSTOM/*.xsh`:
-    source @(config_file)
+        # load additional config files
+        for config_file in gp`$OMX_CUSTOM_HOME/*.xsh`:
+            source @(config_file)
+
+omx = OhMyXonsh()

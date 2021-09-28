@@ -1,7 +1,6 @@
 def detect_clipboard():
     """Detect the system clipboard and set the clipcopy/clippaste aliases"""
-    import platform
-    sysname = platform.system().lower()
+    sysname = omx.platform.lower()
     if sysname == 'darwin':
         aliases["clipcopy"] = "pbcopy"
         aliases["clippaste"] = "pbpaste"
