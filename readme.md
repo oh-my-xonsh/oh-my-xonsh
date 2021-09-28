@@ -11,7 +11,8 @@ Add the following snippet to your `~/.config/xonsh/rc.xsh`:
 if not 'OMX_HOME' in ${...}:
     $OMX_HOME = p"~/.config/xonsh/oh-my-xonsh"
 
-if not $OMX_HOME.exists():
+# clone omx if needed
+if not pf"{$OMX_HOME}".exists():
     git clone --depth=1 https://github.com/oh-my-xonsh/oh-my-xonsh $OMX_HOME
 
 # source oh-my-xonsh to give you the `omx` object
