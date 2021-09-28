@@ -24,9 +24,9 @@ if not 'XSH_CUSTOM' in ${...}:
 omx_loaded_plugins = OrderedDict()
 
 # define functions
-def omx_load_plugin(plugin):
+def omx_load_plugin(plugin, force=False):
     """Load an Oh-My-Xonsh plugin"""
-    if plugin in omx_loaded_plugins:
+    if plugin in omx_loaded_plugins and not force:
         return False
 
     for plugindir in ($XSH_CUSTOM, $XSH):
