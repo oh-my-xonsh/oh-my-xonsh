@@ -1,6 +1,6 @@
 # oh-my-xonsh
 
-A delightful, open source shell framework to boost your Xonsh configuration
+🐍 🐚 🔌 - A delightful framework to give your Python-powered, cross-platform, Unix-gazing Xonsh shell a boost!
 
 ## References
 
