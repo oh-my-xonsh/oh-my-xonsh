@@ -39,6 +39,14 @@ def omx_load_plugin(plugin, force=False):
         echo @(f"Cannot find plugin: {plugin}") out>err
         return False
 
+def omx_list_plugins():
+    echo "--- OMX plugins ---"
+    for fp in gp`$XSH/plugins/*/`:
+        echo @(fp.name)
+    echo "--- OMX custom plugins ---"
+    for fp in gp`$XSH_CUSTOM/plugins/*/`:
+        echo @(fp.name)
+
 # load plugins
 for plugin in plugins:
     omx_load_plugin(plugin)
