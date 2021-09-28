@@ -7,8 +7,22 @@ The plugin is not real. It's just an example.
 To use this plugin, append `example` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("example")
+# add `example` to your plugins list:
+omx.plugins = [
+    "...",
+    "example",
+    "...",
+]
+
+# -or- tack this plugin onto the end of the list
+omx.plugins.append("example")
 ```
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `doit`  | Do a thing  |
 
 ## Aliases
 
