@@ -5,4 +5,4 @@
 
 # For example: add yourself an alias to projects you often work on.
 #
-# aliases['xsh'] = 'cd $XSH'
+# aliases['omxcustom'] = 'cd $OMX_CUSTOM_HOME'
