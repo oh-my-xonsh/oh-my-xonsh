@@ -7,7 +7,7 @@ The plugin provides some useful features for users of Apple's MacOS.
 To use this plugin, append `macos` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("macos")
+omx.plugins.append("macos")
 ```
 
 ## Commands

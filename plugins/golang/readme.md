@@ -7,7 +7,7 @@ The plugin is not real. It's just an golang.
 To use this plugin, append `golang` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("golang")
+omx.plugins.append("golang")
 ```
 
 ## Aliases

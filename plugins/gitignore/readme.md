@@ -7,7 +7,7 @@ The plugin is not real. It's just an gitignore.
 To use this plugin, append `gitignore` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("gitignore")
+omx.plugins.append("gitignore")
 ```
 
 ## Commands

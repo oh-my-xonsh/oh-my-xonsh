@@ -7,7 +7,7 @@ The plugin adds several aliases for common [brew](https://brew.sh) commands.
 To use this plugin, append `brew` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("brew")
+omx.plugins.append("brew")
 ```
 
 ## Aliases

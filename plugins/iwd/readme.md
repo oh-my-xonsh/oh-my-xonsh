@@ -8,7 +8,7 @@ This allows rapid switching back to wherever you started from.
 To use this plugin, append `iwd` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("iwd")
+omx.plugins.append("iwd")
 ```
 
 ## Features

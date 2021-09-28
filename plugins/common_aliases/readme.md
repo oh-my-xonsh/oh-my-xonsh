@@ -7,7 +7,7 @@ The plugin provides some common helpful aliases.
 To use this plugin, append `common-aliases` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("common-aliases")
+omx.plugins.append("common-aliases")
 ```
 
 ## Aliases

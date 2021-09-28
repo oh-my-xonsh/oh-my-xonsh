@@ -7,7 +7,7 @@ Copies the path of your current folder to the system clipboard.
 To use this plugin, append `copydir` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("copydir")
+omx.plugins.append("copydir")
 ```
 
 ## Aliases

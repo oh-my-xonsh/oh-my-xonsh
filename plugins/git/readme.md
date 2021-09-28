@@ -7,7 +7,7 @@ The git plugin provides many [aliases](#aliases) and some useful [functions](#fu
 To use this plugin, append `git` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("git")
+omx.plugins.append("git")
 ```
 
 ## Config options

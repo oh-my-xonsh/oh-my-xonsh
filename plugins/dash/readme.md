@@ -7,7 +7,7 @@ The plugin provides some useful features for users Dash.app on MacOS.
 To use this plugin, append `dash` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("dash")
+omx.plugins.append("dash")
 ```
 
 ## Commands

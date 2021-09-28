@@ -7,7 +7,7 @@ The plugin is gives you simple clipboard management functions.
 To use this plugin, append `clipboard` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("clipboard")
+omx.plugins.append("clipboard")
 ```
 
 ## Aliases

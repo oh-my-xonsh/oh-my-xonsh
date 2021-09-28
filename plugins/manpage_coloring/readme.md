@@ -7,7 +7,7 @@ Make your man pages prettier with some color.
 To use this plugin, append `manpage_coloring` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins.append("manpage_coloring")
+omx.plugins.append("manpage_coloring")
 ```
 
 [See here][xonsh_manpage_coloring] for more details.
