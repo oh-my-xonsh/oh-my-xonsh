@@ -9,6 +9,9 @@ __pycache__/
 foo.xsh
 
 # exclude special dirs
-custom/*/
 custom/*
 !custom/example.xsh
+!custom/plugins/
+custom/plugins/*
+!custom/plugins/example
+!custom/plugins/example/*.*
