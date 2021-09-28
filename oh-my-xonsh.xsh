@@ -43,7 +43,7 @@ class OhMyXonsh():
             echo @(f"Cannot find plugin: {plugin}") out>err
             return False
 
-    def initialize(self):
+    def init(self):
         """Initialize the Oh-My-Xonsh plugins and scripts"""
         # load plugins
         for plugin in self.plugins:
