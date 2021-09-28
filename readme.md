@@ -1,6 +1,6 @@
 # oh-my-xonsh
 
-🐍 🐚 🔌 - A delightful framework to give your Python-powered, cross-platform, Unix-gazing Xonsh shell a boost!
+🐍 🐚 🔌 - A delightful framework to give your Python-powered, cross-platform, Unix-gazing [Xonsh][xonsh] shell a boost!
 
 ## Usage
 
@@ -48,6 +48,7 @@ Oh-My-Xonsh is inspired by many wonderful similar projects from other shells:
 - [Oh My Fish][ohmyfish]
 - [Oh My Bash][ohmybash]
 
+[xonsh]: https://xon.sh
 [ohmyzsh]: https://github.com/ohmyzsh/ohmyzsh
 [prezto]: https://github.com/sorin-ionescu/prezto
 [ohmyfish]: https://github.com/oh-my-fish/oh-my-fish
