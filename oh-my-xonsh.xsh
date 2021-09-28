@@ -16,6 +16,10 @@ class OhMyXonsh():
         self.config = {}
         self.platform = platform.system()
 
+    def update(self):
+        """Update Oh-My-Xonsh by pulling latest from git"""
+        command git -C "$OMX_HOME" pull --depth=1 --rebase --autostash
+
     def list_plugins(self):
         """List Oh-My-Xonsh plugins"""
         print("--- OMX plugins ---")
