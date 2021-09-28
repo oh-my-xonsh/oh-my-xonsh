@@ -2,10 +2,10 @@
 
 The git plugin provides many [aliases](#aliases) and some useful [functions](#functions).
 
-To use it, add `git` to the plugins array in your rc.xsh file:
+To use it, add `git` to the plugins list in your rc.xsh file:
 
 ```shell
-plugins = (..., "git")
+plugins = [..., "git"]
 ```
 
 ## Config options
