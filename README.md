@@ -1,10 +1,10 @@
 # oh-my-xonsh
 
-Bringing a delightful, open source framework to your Xonsh configuration
+A delightful, open source shell framework to boost your Xonsh configuration
 
 ## References
 
-oh-my-xonsh is inspired by many wonderful predecessors from other shells:
+oh-my-xonsh is inspired by many wonderful similar projects from other shells:
 
 - [Oh My Zsh][ohmyzsh]
 - [Prezto][prezto]
