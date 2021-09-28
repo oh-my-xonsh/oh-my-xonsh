@@ -5,7 +5,7 @@ if omx.platform.lower() == 'darwin':
 aliases['_'] = 'sudo'
 aliases['c'] = 'clear'
 aliases['d'] = 'dirs -v | head -10'
-aliases['h'] = 'history'
+aliases['h'] = 'history show all -n -t | tail -15'
 aliases['p'] = 'ps -f'
 aliases['v'] = 'vim'
 
