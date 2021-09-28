@@ -2,10 +2,12 @@
 
 The git plugin provides many [aliases](#aliases) and some useful [functions](#functions).
 
-To use it, add `git` to the plugins list in your rc.xsh file:
+## Install
+
+To use this plugin, append `git` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins = [..., "git"]
+plugins.append("git")
 ```
 
 ## Config options
@@ -201,3 +203,6 @@ plugins = [..., "git"]
 | git_current_branch | Return the name of the current branch                                                                               |
 | git_main_branch    | Returns the name of the main branch: `main`, `master`, or 'trunk` if they exist, otherwise `main`                   |
 | git_dev_branch     | Returns the name of the develop branch: `develop`, `dev`, `devel`, `development` if they exist, otherwise `develop` |
+
+
+[rc.xsh]: https://xon.sh/xonshrc.html

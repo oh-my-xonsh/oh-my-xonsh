@@ -2,10 +2,12 @@
 
 The plugin adds several aliases for common [brew](https://brew.sh) commands.
 
-To use it, add `brew` to the plugins list in your rc.xsh file:
+## Install
+
+To use this plugin, append `brew` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins = [..., "brew"]
+plugins.append("brew")
 ```
 
 ## Aliases
@@ -21,3 +23,6 @@ plugins = [..., "brew"]
 | `buf`    | `brew upgrade --formula`              | Upgrade only formulas (not casks).                                  |
 | `bcubo`  | `brew update && brew outdated --cask` | Update Homebrew data, then list outdated casks.                     |
 | `bcubc`  | `brew upgrade --cask && brew cleanup` | Update outdated casks, then run cleanup.                            |
+
+
+[rc.xsh]: https://xon.sh/xonshrc.html

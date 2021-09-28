@@ -3,10 +3,12 @@
 In a similar vein to $PWD, this plugin stores your initial working directory (iwd) in $IWD.
 This allows rapid switching back to wherever you started from.
 
-To use it, add `iwd` to the plugins list in your rc.xsh file:
+## Install
+
+To use this plugin, append `iwd` to your plugins list in your [rc.xsh] file:
 
 ```shell
-plugins = [..., "iwd"]
+plugins.append("iwd")
 ```
 
 ## Features
@@ -15,3 +17,6 @@ plugins = [..., "iwd"]
 |---------|-------------|-----------------------------------------|
 | `iwd`   | `echo $IWD` | Print the initial working directory     |
 | `cdiwd` | `cd $IWD`   | Change to the initial working directory |
+
+
+[rc.xsh]: https://xon.sh/xonshrc.html
