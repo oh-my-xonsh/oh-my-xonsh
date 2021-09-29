@@ -6,14 +6,14 @@ if not 'OMX_CUSTOM_HOME' in ${...}:
     $OMX_CUSTOM_HOME = $OMX_HOME / "custom"
 
 class OhMyXonsh():
-    """Object to hold the Oh-My-Xonsh functionality"""
+    """Driver for Oh-My-Xonsh functionality"""
     def __init__(self):
         """class initializer"""
-        from collections import OrderedDict
+        from collections import OrderedDict, defaultdict
         import platform
         self.plugins = []
         self.loaded_plugins = OrderedDict()
-        self.config = {}
+        self.config = defaultdict(lambda: None)
         self.platform = platform.system()
 
     def update(self):

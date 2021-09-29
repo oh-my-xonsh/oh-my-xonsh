@@ -36,7 +36,27 @@ omx.plugins = [
     'up',
 ]
 
+# configure your plugins
+# omx.config["plugins.git.skip_aliases"] = True
+
 # initialize oh-my-xonsh
+omx.init()
+```
+
+## Configuration
+
+Some plugins allow for configuration options. The `omx` object has a `.config` property that allows you to set config values.
+
+You need to be sure you set these values before calling `omx.init()` in your [rc.xsh] file.
+
+For example:
+
+```shell
+# set your config options
+omx.config["plugins.example.whoami"] = "I'm Batman!"
+omx.config["plugins.git.skip_aliases"] = True
+
+# now call init
 omx.init()
 ```
 
@@ -50,6 +70,7 @@ Oh-My-Xonsh is inspired by many wonderful similar projects from other shells:
 - [Oh My Bash][ohmybash]
 
 [xonsh]: https://xon.sh
+[rc.xsh]: https://xon.sh/xonshrc.html
 [ohmyzsh]: https://github.com/ohmyzsh/ohmyzsh
 [prezto]: https://github.com/sorin-ionescu/prezto
 [ohmyfish]: https://github.com/oh-my-fish/oh-my-fish

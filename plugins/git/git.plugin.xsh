@@ -205,5 +205,5 @@ omx_git_aliases = {
     # additional aliases beyond what OMZ provided
     "gwho"                 : 'git config user.name && git config user.email'
 }
-if not omx.config.get('git_skip_aliases', False):
+if not omx.config["plugins.git.skip_aliases"]:
     aliases.update(omx_git_aliases)
