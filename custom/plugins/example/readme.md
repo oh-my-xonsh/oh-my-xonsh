@@ -37,5 +37,17 @@ omx.plugins.append("example")
 |---------------|--------------------------------|
 | `hello_world` | A simple greeting to the world |
 
+## Config Options
+
+| Config                                 | Type | Description                    |
+|----------------------------------------|------|--------------------------------|
+| `omx.config["plugins.example.whoami"]` | str  | Who are you saying "hello" to? |
+
+Example:
+
+```shell
+omx.config["plugins.example.whoami"] = "I'm Batman"
+omx.init()
+```
 
 [rc.xsh]: https://xon.sh/xonshrc.html
