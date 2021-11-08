@@ -1,15 +1,7 @@
 if omx.platform.lower() == 'darwin':
     aliases["grep"] = 'grep --color=auto --exclude-dir="{.bzr,CVS,.git,.hg,.svn}"'
 
-# single char aliases, use with caution
-aliases['_'] = 'sudo'
-aliases['c'] = 'clear'
-aliases['d'] = 'dirs -v | head -10'
-aliases['h'] = 'history show all -n -t | tail -15'
-aliases['p'] = 'ps -f'
-aliases['v'] = 'vim'
-
-aliases['l'] = 'ls -lFh'       # size, show type, human readable
+# ls aliases
 aliases['la'] = 'ls -lAFh'     # long list, show almost all, show type, human readable
 aliases['lr'] = 'ls -tRFh'     # sorted by date, recursive, show type, human readable
 aliases['lt'] = 'ls -ltFh'     # long list, sorted by date, show type, human readable
