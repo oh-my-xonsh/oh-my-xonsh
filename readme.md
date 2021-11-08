@@ -64,7 +64,7 @@ omx.init()
 
 You can add your own custom `.xsh` files or plugins to OMX by using the `$OMX_CUSTOM_HOME` directory.
 You can set `$OMX_CUSTOM_HOME` to whatever you want, or you can use the OMX default. An example is
-included to help you get started.
+[included][example-plugin] to help you get started.
 
 ## The `omx` object
 
@@ -127,3 +127,4 @@ Oh-My-Xonsh is inspired by many wonderful similar projects from other shells:
 [prezto]: https://github.com/sorin-ionescu/prezto
 [ohmyfish]: https://github.com/oh-my-fish/oh-my-fish
 [ohmybash]: https://github.com/ohmybash/oh-my-bash
+[example-plugin]: https://github.com/oh-my-xonsh/oh-my-xonsh/tree/main/custom/plugins/example
