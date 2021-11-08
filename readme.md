@@ -4,7 +4,7 @@
 
 ## Usage
 
-Add the following snippet to your `~/.config/xonsh/rc.xsh`:
+Add the following snippet to your `~/.config/xonsh/rc.xsh` or `~/.xonshrc`:
 
 ```shell
 # set where oh-my-xonsh lives
@@ -20,8 +20,8 @@ source $OMX_HOME/oh-my-xonsh.xsh
 
 # choose your plugins
 omx.plugins = [
+    'autocmd',
     'brew',
-    'cdls',
     'clipboard',
     'common_aliases',
     'copydir',
@@ -58,6 +58,58 @@ omx.config["plugins.git.skip_aliases"] = True
 
 # now call init
 omx.init()
+```
+
+## Adding your own custom plugins
+
+You can add your own custom `.xsh` files or plugins to OMX by using the `$OMX_CUSTOM_HOME` directory.
+You can set `$OMX_CUSTOM_HOME` to whatever you want, or you can use the OMX default. An example is
+included to help you get started.
+
+## The `omx` object
+
+Sourcing Oh-My-Xonsh gives you the `omx` object, which allows you to do lots of great things, such as:
+
+### List available plugins
+
+```shell
+$ omx.list_plugins()
+--- OMX plugins ---
+autocmd
+brew
+cdls
+clipboard
+common_aliases
+copydir
+copyfile
+dash
+git
+gitignore
+golang
+iwd
+jupyter
+macos
+manpage_coloring
+shrink_path
+up
+--- OMX custom plugins ---
+example
+```
+
+## Loaded plugins
+
+You can see the `CommandPipeline` details about the plugins you've loaded, including the load times for each plugin.
+
+```shell
+$ omx.loaded_plugins
+```
+
+### Updating OMX
+
+OMX can update itself if you want as well (which is simply doing a `git pull`).
+
+```shell
+$ omx.update()
 ```
 
 ## References
