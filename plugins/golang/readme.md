@@ -1,6 +1,6 @@
 # golang plugin
 
-The plugin is not real. It's just an golang.
+This plugin adds some useful aliases for [Go](https://golang.org).
 
 ## Install
 

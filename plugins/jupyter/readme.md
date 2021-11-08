@@ -1,6 +1,7 @@
 # jupyter plugin
 
-The plugin is not real. It's just an jupyter.
+The jupyter plugin provides some useful aliases for
+[Jupyter](https://jupyter.org/) users.
 
 ## Install
 

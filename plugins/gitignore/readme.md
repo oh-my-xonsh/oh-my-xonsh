@@ -1,6 +1,7 @@
 # gitignore plugin
 
-The plugin is not real. It's just an gitignore.
+This plugin lets you use [gitignore.io](https://gitignore.io) to generate your
+.gitignore files.
 
 ## Install
 
@@ -12,10 +13,10 @@ omx.plugins.append("gitignore")
 
 ## Commands
 
-| Command | Description            |
-|---------|------------------------|
-| `gi list`    | List all available .gitignore possibilities |
-| `gi <language...>`    | Display an appropriate .gitignore for the languages specified |
+| Command            | Description                                                   |
+|--------------------|---------------------------------------------------------------|
+| `gi list`          | List all available .gitignore possibilities                   |
+| `gi <language...>` | Display an appropriate .gitignore for the languages specified |
 
 ## Examples
 
