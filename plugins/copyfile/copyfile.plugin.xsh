@@ -1,8 +1,8 @@
 def _copyfile(args):
     """Copy the contents of a file to the clipboard"""
     # requires clipboard plugin
-    if "clipboard" not in omx_loaded_plugins:
-        omx_load_plugin("clipboard")
+    if "clipboard" not in omx.loaded_plugins:
+        omx.load_plugin("clipboard")
     if not args or len(args) < 1:
         echo "What file do you want to copy?" out>err
         return 1
