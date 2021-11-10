@@ -201,7 +201,7 @@ omx.plugins.append("git")
 | Command            | Description                                                                                                         |
 |:-------------------|:--------------------------------------------------------------------------------------------------------------------|
 | git_current_branch | Return the name of the current branch                                                                               |
-| git_main_branch    | Returns the name of the main branch: `main`, `master`, or 'trunk` if they exist, otherwise `main`                   |
+| git_main_branch    | Returns the name of the main branch: `main`, `master`, or `trunk` if they exist, otherwise `main`                   |
 | git_dev_branch     | Returns the name of the develop branch: `develop`, `dev`, `devel`, `development` if they exist, otherwise `develop` |
 
 
