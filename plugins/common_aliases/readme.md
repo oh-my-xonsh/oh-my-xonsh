@@ -27,12 +27,12 @@ omx.plugins.append("common-aliases")
 | `lt`        | `ls -ltFh`                                                   | Long list, sorted by date, show type, human readable      |
 | `p`         | `ps -f`                                                      | Single char alias for ps                                  |
 | `v`         | `vim`                                                        | Single char alias for vim                                 |
-| `tarls`     | tar -tvf                                                     | List contents of tar file                                 |
-| `untar`     | tar -xf                                                      | Un-tar a file                                             |
-| `speedtest` | wget -O /dev/null http://speed.transip.nl/10mb.bin           | Simple `wget` based internet speed test                   |
-| `dud`       | du -d 1 -h                                                   | List directory sizes                                      |
-| `fd`        | find . -type d -name                                         | Find a directory                                          |
-| `ff`        | find . -type f -name                                         | Find a file                                               |
+| `tarls`     | `tar -tvf`                                                   | List contents of tar file                                 |
+| `untar`     | `tar -xf`                                                    | Un-tar a file                                             |
+| `speedtest` | `wget -O /dev/null http://speed.transip.nl/10mb.bin`         | Simple `wget` based internet speed test                   |
+| `dud`       | `du -d 1 -h`                                                 | List directory sizes                                      |
+| `fd`        | `find . -type d -name`                                       | Find a directory                                          |
+| `ff`        | `find . -type f -name`                                       | Find a file                                               |
 
 
 [rc.xsh]: https://xon.sh/xonshrc.html
