@@ -18,7 +18,7 @@ omx.plugins.append("common-aliases")
 | `c`         | `clear`                                                      | Single char alias for clear                               |
 | `d`         | `dirs -v \| head -10`                                        | Single char alias for dirs                                |
 | `grep`      | `grep --color=auto --exclude-dir="{.bzr,CVS,.git,.hg,.svn}"` | Grep with colors and excluding VCS dirs                   |
-| `h`         | `history show all -n -t | tail -15`                          | Single char alias to show last 15 commands from history   |
+| `h`         | `history show all -n -t \| tail -15`                         | Single char alias to show last 15 commands from history   |
 | `l`         | `ls -lFh`                                                    | List by: size, show type, human readable                  |
 | `la`        | `ls -lAFh`                                                   | Long list, show almost all, show type, human readable     |
 | `ldot`      | `ls -ld .*`                                                  | List hidden dot files                                     |
