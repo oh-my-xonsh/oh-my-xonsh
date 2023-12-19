@@ -1,7 +1,7 @@
 # functions
 def git_find_branch(*branches):
     """Return the name of the first git branch found from the provided arg list"""
-    if !(commnad git rev-parse --git-dir all>/dev/null).returncode != 0:
+    if !(command git rev-parse --git-dir all>/dev/null).returncode != 0:
         return
     for branch in branches:
         if !(command git show-ref -q --verify refs/heads/@(branch)).returncode == 0:
