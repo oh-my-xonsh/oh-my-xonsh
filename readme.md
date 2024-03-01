@@ -1,5 +1,13 @@
 # oh-my-xonsh
 
+# -----------------------------------------------------
+# CALL FOR NEW MAINTAINERS
+
+I started this project to bring features of OMZ to the Xonsh community, but no longer use Xonsh, and thus will not be maintaining this project. If you have a proven track record of helpful participation in the Xonsh community and believe this is project you would like to maintain into the future, please open an issue and I can transfer the org.
+
+# -----------------------------------------------------
+
+
 🐍 🐚 🔌 - A delightful framework to give your Python-powered, cross-platform, Unix-gazing [Xonsh][xonsh] shell a boost!
 
 ## Usage
